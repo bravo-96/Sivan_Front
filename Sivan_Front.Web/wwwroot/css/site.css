@@ -5,6 +5,8 @@
     --green-hover: #002f29;
     --grayParagraph: #686868;
     --yellowButton: #00473E;
+    --pink-Paragraph: #FA5246;
+    --pink-Footer: rgba(255, 168, 186, 0.85);
 }
 html {
     font-size: 14px;
@@ -41,7 +43,7 @@ a {
 }
 
 .home-imgLogo {
-    width: 350px;
+    width: 330px;
 }
 
 .nav-group {
@@ -179,7 +181,7 @@ a {
 .section-NuevaTemporada {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    border-bottom: 1px solid rgba(187, 187, 187, 0.20);
+    
 }
 
 .nuevaTemporada-title {
@@ -196,9 +198,9 @@ a {
 
 /*INSTAGRAM*/
 .section-Instagram {
-    margin-top:6rem;
-    padding-left:10rem;
-   
+    margin-top: 6rem;
+    padding-left: 10rem;
+    margin-bottom: 25rem;
 }
 .img-Instagram {
     padding-bottom: 2rem;
@@ -227,6 +229,46 @@ a {
     position: absolute;
     top: 70%;
     left: 65%;
+}
+
+/*NOSOTROS*/
+.section-Nosotros {
+    /*padding:0 5rem 0 5rem;*/
+}
+
+
+.Nosotros-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: var(--pink-Paragraph);
+    text-align: center !important;
+    padding-bottom: 3rem;
+}
+
+
+.Nosotros-info {
+    color: var(--green-header);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+}
+
+.Nosotros-infoExtra {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.09em;
+    color: rgba(71, 93, 91, 0.67);
+}
+
+/*FOOTER*/
+.section-Footer {
+    background-color:var(--pink-Footer);
+    height:15rem;
 }
 /*MEDIA*/
 /*CUANDO EL ANCHO MÁXIMO DE LA PAG SEA 1350PX - TAMAÑO NOTEBOOK-TABLET GRANDE*/
