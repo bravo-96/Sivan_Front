@@ -1,0 +1,1 @@
+{"version":3,"file":"camelToKebab.js","sourceRoot":"","sources":["camelToKebab.ts"],"names":[],"mappings":"AAAA;;;;GAIG;AACH,MAAM,UAAU,YAAY,CAAE,MAAc;IAC1C,OAAO,MAAM,CAAC,OAAO,CAAE,oBAAoB,EAAE,OAAO,CAAE,CAAC,WAAW,EAAE,CAAC;AACvE,CAAC"}
