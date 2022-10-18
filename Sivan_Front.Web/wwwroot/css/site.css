@@ -8,6 +8,7 @@ html {
     font-size: 14px;
     position: relative;
     min-height: 100%;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -31,49 +32,34 @@ a {
   }
 }
 
-@media (max-width: 1350px) {
-    .nav-item {
-        
-        font-size: 20px !important;
-        color: var(--green-header);
-    }
-
-    .nav-iconos {
-        list-style: none;
-        display: flex;
-        color: var(--green-header);
-        padding-left:5rem;
-        cursor: pointer;
-    }
-
-
-}
-
 /*HOME*/
 .navbar {
     position: fixed;
     z-index: 100;
 }
 
-.navbar-nav {
-    /*padding-left:24rem;*/
-
+.home-imgLogo {
+    width: 350px;
 }
+
+.nav-group {
+    margin-left: 20rem;
+    display: flex;
+}
+
 .nav-item {
     padding: 0rem 2.3rem;
     font-size: 24px;
     color: var(--green-header);
 }
-.home-imgLogo {
-    width: 330px;
-}
 
+/*ICONOS NAVBAR*/
 .nav-iconos {
     list-style: none;
     display: flex;
-    color:var(--green-header) ;
-    /*padding-left:15rem;*/
-    cursor:pointer;
+    color: var(--green-header);
+    margin-left: 18rem;
+    cursor: pointer;
 }
 
 .nav-animacionHover {
@@ -84,3 +70,170 @@ a {
         font-size: 25px;
         transition: .5s ease;
     }
+
+/*SECTION PRESENTACION*/
+#Presentacion {
+    margin-bottom: 15rem;
+}
+.section-presentacion {
+    padding-top: 17rem;
+}
+
+.presentacion-text {
+    margin-top:5rem;
+   
+}
+.home-para1 {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.09em;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+#Presentacion h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 68px;
+    text-align: left;
+    letter-spacing: 0.09em;
+}
+
+.home-para2 {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    letter-spacing: 0.09em;
+    color: rgba(0, 0, 0, 0.90);
+}
+
+.btn-presentacion {
+    background: rgba(250, 174, 43, 0.73);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #00473E;
+    border: none;
+    width: 189px;
+    height: 46px;
+    margin-top:1rem;
+}
+
+.img-presentacion {
+    position: absolute;
+    width: 479px;
+    margin-left: 4rem;
+}
+
+/*SECTION PRODUCTO POPULAR*/
+.section-ProductoPopular {
+   padding-bottom:8rem;
+   border-top: 1px solid rgba(187, 187, 187, 0.20);
+}
+
+.productoPopular-Info {
+    padding-left: 18rem;
+    padding-top: 8rem;
+    padding-right: 0;
+}
+
+#ProductoPopular h2 {
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.67)
+}
+
+.title-ProductoPopular {
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    text-align: left;
+    letter-spacing: 0.09em;
+    padding:1rem 0 0 0;
+}
+
+.productoPopular-Detalle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.09em;
+    color: #686868;
+}
+
+.img-container {
+    padding-right: 5rem;
+   
+}
+.img-Producto {
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+/*MEDIA*/
+/*CUANDO EL ANCHO MÁXIMO DE LA PAG SEA 1350PX - TAMAÑO NOTEBOOK-TABLET GRANDE*/
+@media (max-width: 1440px) {
+    /*NAVBAR*/
+    .nav-group {
+        margin-left: 8rem !important;
+        display: flex;
+    }
+
+    .nav-item {
+        font-size: 20px !important;
+        padding: 0rem 1rem !important;
+    }
+
+    .nav-iconos {
+        margin-left: 4rem !important;
+    }
+
+    /*HOME*/
+    .img-presentacion {
+        position: absolute;
+        width: 400px;
+        margin-left: 4rem;
+    }
+
+    .presentacion-text {
+        padding-left: 5px;
+    }
+
+    /*PRODUCTO POPULAR*/
+    .productoPopular-Info {
+        padding-left: 8rem;
+        padding-right:0;
+    }
+
+    .img-Producto {
+        width: 700px;
+    }
+
+    .title-ProductoPopular {
+        font-size: 55px;
+    }
+
+    .productoPopular-Detalle {
+        font-size: 20px;
+    }
+}
+
+/*CUANDO EL ANCHO MÁXIMO DE LA PAG SEA 960PX - TAMAÑO TABLET PEQUEÑA- TELEFONO GRANDE*/
+/*HACER UN SIDE BAR QUE INTEGRE TODO EL NAVBAR Y AJUSTAR EL TAMAÑO DEL LOGO*/
+@media (max-width: 960px) {
+   /* .nav-group {
+        margin-left: 4rem !important;
+        display: flex;
+    }
+
+    .nav-item {
+        font-size: 20px !important;
+        padding: 0rem 1rem !important;
+    }
+
+    .nav-iconos {
+        margin-left: 8rem !important;
+    }*/
+}
